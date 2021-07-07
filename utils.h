@@ -7,8 +7,6 @@
 #include <cmath>
 #include <iostream>
 
-namespace bus {
-namespace updater{
 
 struct Hk80Point
 {
@@ -25,8 +23,5 @@ struct Wgs84Point
 };
 
 void convertHK80GridToCartesian (const Hk80Point& hk_point, Wgs84Point& wgs_point);
-
-}
-}
 
 #endif //__UTILS_H__
