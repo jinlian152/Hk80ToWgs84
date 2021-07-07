@@ -1,7 +1,6 @@
 #ifndef __UTILS_H__
 #define __UTILS_H__
-// translate from github
-// source code : https://console.cloud.baidu-int.com/devops/icode/repos/baidu/lbs-maps/bus-data-management/blob/master:bus_data_crawl/Hongkong/kmb/bin/coordinate.php
+
 // hk point east is lat
 // hk point north is lon
 
