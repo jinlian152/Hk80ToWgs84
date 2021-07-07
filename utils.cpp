@@ -1,6 +1,3 @@
-#ifndef __UTILS_H__
-#define __UTILS_H__
-
 #include <cmath>
 #include <iostream>
 #include "utils.h"
@@ -83,8 +80,6 @@ void convertHK80GridToCartesian (const Hk80Point& hk_point, Wgs84Point& wgs_poin
     wgs_point.lat_ = rad2deg(lat) - 5.5 / 3600;
     wgs_point.lon_ = rad2deg(lng) + 8.8 / 3600;
 }
-
-#endif //__UTILS_H__
 
 // int main() {
 //     bus::updater::Hk80Point hk_point;
