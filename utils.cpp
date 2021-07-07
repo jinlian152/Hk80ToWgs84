@@ -1,13 +1,9 @@
 #ifndef __UTILS_H__
 #define __UTILS_H__
 
-// source code : https://console.cloud.baidu-int.com/devops/icode/repos/baidu/lbs-maps/bus-data-management/blob/master:bus_data_crawl/Hongkong/kmb/bin/coordinate.php
 #include <cmath>
 #include <iostream>
 #include "utils.h"
-
-namespace bus {
-namespace updater{
 
 const int g_a = 6378388;
 const double g_f = 0.0033670033670034;
@@ -86,9 +82,6 @@ void convertHK80GridToCartesian (const Hk80Point& hk_point, Wgs84Point& wgs_poin
     double lng = g_lng0 + de / (g_m0 * v_p * cos(lat_p)) - (pow(de, 3) / (6 * pow(g_m0 * v_p, 3) * cos(lat_p))) * (phi_p + 2 * pow(tan(lat_p), 2));
     wgs_point.lat_ = rad2deg(lat) - 5.5 / 3600;
     wgs_point.lon_ = rad2deg(lng) + 8.8 / 3600;
-}
-
-}
 }
 
 #endif //__UTILS_H__
